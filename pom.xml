@@ -12,6 +12,7 @@
     <!-- 版本控制 -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <druid>1.1.5</druid>
     </properties>
 
     <!--spring boot-->
@@ -38,6 +39,11 @@
             <artifactId>spring-boot-starter-log4j2</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
         <!--开发工具-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -46,9 +52,13 @@
 
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
+        <!--Druid-->
+        <!--<dependency>-->
+            <!--<groupId>com.alibaba</groupId>-->
+            <!--<artifactId>druid-spring-boot-starter</artifactId>-->
+            <!--<version>${druid}</version>-->
+        <!--</dependency>-->
+
+
     </dependencies>
 </project>

@@ -15,7 +15,5 @@ body {
 
 footer {
   width: 100%;
-  color: #666;
   text-align: center;
-  position: fixed;
-  bottom: 20px; }
+  border: 1px solid red; }

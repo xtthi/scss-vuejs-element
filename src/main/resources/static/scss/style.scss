@@ -1,6 +1,7 @@
 $bg-color: #333;
 
-body{
+body,html{
+  border:1px solid red;
   width: 100%;
   height: 100%;
   overflow: hidden;

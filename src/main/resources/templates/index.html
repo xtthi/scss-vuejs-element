@@ -1,36 +1,25 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<html xmlns:th="http://www.thymeleaf.org">
 <head th:include="resource::header">
+    <meta charset="UTF-8" />
+    <title>test</title>
+
 </head>
-<link rel="stylesheet" th:href="@{/css/index.css}"/>
-<!--<script th:src="@{/js/login/login.js}" />-->
 <body>
-<header class="top-bar">
-        <div class="top-bar-left">
-            <ul class="menu" >
-                <li class="menu-text">管理系统</li>
-            </ul>
-        </div>
-        <div class="top-bar-right">
-            <ul class="menu">
-                <li><button type="button" class="button">退出</button></li>
-            </ul>
-        </div>
-</header>
-<aside>
-    <nav>
-        test
-    </nav>
-</aside>
-<article>
-    test2
-</article>
+<div id="app">
+    <el-button v-on:click="visible = true">按钮</el-button>
+    <el-dialog :visible.sync="visible" title="Hello world">
+        <p>欢迎使用 Element</p>
+    </el-dialog>
+</div>
 
-
-
-</body>
 <script>
-    $(document).foundation();
+    new Vue({
+        el: '#app',
+        data: function() {
+            return { visible: false }
+        }
+    })
 </script>
+</body>
 </html>

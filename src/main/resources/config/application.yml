@@ -22,10 +22,7 @@ spring:
      encoding : UTF-8
      content-type : text/html
      cache : false
-#  mvc:
-#    view:
-#        prefix : /WEB-INF/view/
-#        suffix : .jsp
+
   
   #中文乱码过滤
 #  http:

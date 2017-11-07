@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:include="resource::header">
     <title>系统登录</title>
 </head>
 <link rel="stylesheet" th:href="@{/css/login.css}"/>
-<script th:src="@{/js/login/login.js}" />
+<!--<script th:src="@{/js/login/login.js}" />-->
 <body>
-    <div class="login-wrap">
-        <h4>系统登录</h4>
-        <div class="input-group">
-            <span class="input-group-label"><i class="fi-lock"></i> </span>
-            <input class="input-group-field" type="text" placeholder="请输入帐号" />
+        <div class="login-wrap">
+            <h4>系统登录</h4>
+            <p></p>
+            <div class="input-group">
+                <span class="input-group-addon rounded-0" id="basic-addon1"><i class="material-icons">account_circle</i></span>
+                <input type="text" class="form-control rounded-0" placeholder="Username" aria-describedby="basic-addon1" />
+            </div>
+            <p></p>
+            <div class="input-group ">
+                <span class="input-group-addon rounded-0"><i class="material-icons">vpn_key</i></span>
+                <input type="password" class="form-control rounded-0" placeholder="Username" aria-describedby="basic-addon1" />
+            </div>
+            <p></p>
+            <P class="text-right">还没有帐号？<a href="">点击注册</a></P>
+            <button type="button" class="btn btn-primary btn-block rounded-0">登录</button>
         </div>
-        <div class="input-group">
-            <span class="input-group-label"><i class="fi-key"></i> </span>
-            <input class="input-group-field" type="password" placeholder="请输入密码" />
-        </div>
-        <P class="text-right">还没有帐号？<a href="">点击注册</a></P>
-        <button type="button" class="button expanded">登录</button>
-    </div>
 <footer>
-    <address>江苏省南京市</address> <abbr>系统管理 &copy; 2017-2020</abbr>
+    <address>江苏省南京市</address><abbr>系统管理 &copy; 2017-2020</abbr>
 </footer>
 </body>
 </html>
